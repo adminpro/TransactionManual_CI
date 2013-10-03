@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:tns="http://localhost:7026/ImprimirECBWebService" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://model.val.cit.seur.com" targetNamespace="http://localhost:7026/ImprimirECBWebService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://localhost:7026/ImprimirECBWebService">
+      <xsd:element name="serviciosProductosCI">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="serviciosProductosCIResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getLogoImpr">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getLogoImprResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="impresionPDFWS">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="impresionPDFWSResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="marcasModelosImpresorasWS">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="marcasModelosImpresorasWSResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="tramaImprCodBulto">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in6" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in7" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="tramaImprCodBultoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="impresionConECBWS">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in6" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="ArrayOfString">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="impresionConECBWSResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="ns1:ResponseImprConECBWS" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="configImpr">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in6" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="configImprResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="impresionWS">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in6" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="impresionWSResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="tramaImpr">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in6" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in7" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="tramaImprResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="impresionPDFConECBWS">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="impresionPDFConECBWSResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="ns1:ResponseImprPDFConECBWS" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="configuracionImpresoraWS">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="configuracionImpresoraWSResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="impresionIntegracionConECBWS">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in6" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in7" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in8" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in9" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in10" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="impresionIntegracionConECBWSResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="ns1:ResponseImprConECBWS" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="serviciosComplementariosWS">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="serviciosComplementariosWSResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="impresionCodeBarWS">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in6" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="impresionCodeBarWSResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="tramasImprEnvio">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in6" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in7" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="tramasImprEnvioResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="impresionIntegracionPDFConECBWS">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in6" nillable="true" type="xsd:int" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in7" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="impresionIntegracionPDFConECBWSResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="ns1:ResponseImprPDFConECBWS" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://model.val.cit.seur.com">
+      <xsd:complexType name="ResponseImprConECBWS">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ECB" nillable="true" type="tns:ArrayOfString" />
+          <xsd:element minOccurs="0" name="mensaje" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="traza" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ResponseImprPDFConECBWS">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ECB" nillable="true" type="tns:ArrayOfString" />
+          <xsd:element minOccurs="0" name="PDF" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="mensaje" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="impresionIntegracionPDFConECBWSResponse">
+    <wsdl:part name="parameters" element="tns:impresionIntegracionPDFConECBWSResponse" />
+  </wsdl:message>
+  <wsdl:message name="configImprRequest">
+    <wsdl:part name="parameters" element="tns:configImpr" />
+  </wsdl:message>
+  <wsdl:message name="configImprResponse">
+    <wsdl:part name="parameters" element="tns:configImprResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLogoImprRequest">
+    <wsdl:part name="parameters" element="tns:getLogoImpr" />
+  </wsdl:message>
+  <wsdl:message name="tramaImprCodBultoResponse">
+    <wsdl:part name="parameters" element="tns:tramaImprCodBultoResponse" />
+  </wsdl:message>
+  <wsdl:message name="impresionPDFWSRequest">
+    <wsdl:part name="parameters" element="tns:impresionPDFWS" />
+  </wsdl:message>
+  <wsdl:message name="serviciosProductosCIRequest">
+    <wsdl:part name="parameters" element="tns:serviciosProductosCI" />
+  </wsdl:message>
+  <wsdl:message name="impresionIntegracionConECBWSResponse">
+    <wsdl:part name="parameters" element="tns:impresionIntegracionConECBWSResponse" />
+  </wsdl:message>
+  <wsdl:message name="marcasModelosImpresorasWSRequest">
+    <wsdl:part name="parameters" element="tns:marcasModelosImpresorasWS" />
+  </wsdl:message>
+  <wsdl:message name="serviciosComplementariosWSResponse">
+    <wsdl:part name="parameters" element="tns:serviciosComplementariosWSResponse" />
+  </wsdl:message>
+  <wsdl:message name="marcasModelosImpresorasWSResponse">
+    <wsdl:part name="parameters" element="tns:marcasModelosImpresorasWSResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviciosProductosCIResponse">
+    <wsdl:part name="parameters" element="tns:serviciosProductosCIResponse" />
+  </wsdl:message>
+  <wsdl:message name="impresionCodeBarWSRequest">
+    <wsdl:part name="parameters" element="tns:impresionCodeBarWS" />
+  </wsdl:message>
+  <wsdl:message name="impresionPDFConECBWSResponse">
+    <wsdl:part name="parameters" element="tns:impresionPDFConECBWSResponse" />
+  </wsdl:message>
+  <wsdl:message name="tramaImprRequest">
+    <wsdl:part name="parameters" element="tns:tramaImpr" />
+  </wsdl:message>
+  <wsdl:message name="impresionPDFWSResponse">
+    <wsdl:part name="parameters" element="tns:impresionPDFWSResponse" />
+  </wsdl:message>
+  <wsdl:message name="impresionPDFConECBWSRequest">
+    <wsdl:part name="parameters" element="tns:impresionPDFConECBWS" />
+  </wsdl:message>
+  <wsdl:message name="impresionConECBWSResponse">
+    <wsdl:part name="parameters" element="tns:impresionConECBWSResponse" />
+  </wsdl:message>
+  <wsdl:message name="tramaImprCodBultoRequest">
+    <wsdl:part name="parameters" element="tns:tramaImprCodBulto" />
+  </wsdl:message>
+  <wsdl:message name="impresionIntegracionPDFConECBWSRequest">
+    <wsdl:part name="parameters" element="tns:impresionIntegracionPDFConECBWS" />
+  </wsdl:message>
+  <wsdl:message name="getLogoImprResponse">
+    <wsdl:part name="parameters" element="tns:getLogoImprResponse" />
+  </wsdl:message>
+  <wsdl:message name="impresionWSResponse">
+    <wsdl:part name="parameters" element="tns:impresionWSResponse" />
+  </wsdl:message>
+  <wsdl:message name="configuracionImpresoraWSRequest">
+    <wsdl:part name="parameters" element="tns:configuracionImpresoraWS" />
+  </wsdl:message>
+  <wsdl:message name="impresionConECBWSRequest">
+    <wsdl:part name="parameters" element="tns:impresionConECBWS" />
+  </wsdl:message>
+  <wsdl:message name="impresionWSRequest">
+    <wsdl:part name="parameters" element="tns:impresionWS" />
+  </wsdl:message>
+  <wsdl:message name="impresionIntegracionConECBWSRequest">
+    <wsdl:part name="parameters" element="tns:impresionIntegracionConECBWS" />
+  </wsdl:message>
+  <wsdl:message name="serviciosComplementariosWSRequest">
+    <wsdl:part name="parameters" element="tns:serviciosComplementariosWS" />
+  </wsdl:message>
+  <wsdl:message name="tramasImprEnvioRequest">
+    <wsdl:part name="parameters" element="tns:tramasImprEnvio" />
+  </wsdl:message>
+  <wsdl:message name="tramaImprResponse">
+    <wsdl:part name="parameters" element="tns:tramaImprResponse" />
+  </wsdl:message>
+  <wsdl:message name="configuracionImpresoraWSResponse">
+    <wsdl:part name="parameters" element="tns:configuracionImpresoraWSResponse" />
+  </wsdl:message>
+  <wsdl:message name="tramasImprEnvioResponse">
+    <wsdl:part name="parameters" element="tns:tramasImprEnvioResponse" />
+  </wsdl:message>
+  <wsdl:message name="impresionCodeBarWSResponse">
+    <wsdl:part name="parameters" element="tns:impresionCodeBarWSResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ImprimirECBWebServicePortType">
+    <wsdl:operation name="serviciosProductosCI">
+      <wsdl:input name="serviciosProductosCIRequest" message="tns:serviciosProductosCIRequest" />
+      <wsdl:output name="serviciosProductosCIResponse" message="tns:serviciosProductosCIResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getLogoImpr">
+      <wsdl:input name="getLogoImprRequest" message="tns:getLogoImprRequest" />
+      <wsdl:output name="getLogoImprResponse" message="tns:getLogoImprResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="impresionPDFWS">
+      <wsdl:input name="impresionPDFWSRequest" message="tns:impresionPDFWSRequest" />
+      <wsdl:output name="impresionPDFWSResponse" message="tns:impresionPDFWSResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="marcasModelosImpresorasWS">
+      <wsdl:input name="marcasModelosImpresorasWSRequest" message="tns:marcasModelosImpresorasWSRequest" />
+      <wsdl:output name="marcasModelosImpresorasWSResponse" message="tns:marcasModelosImpresorasWSResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="tramaImprCodBulto">
+      <wsdl:input name="tramaImprCodBultoRequest" message="tns:tramaImprCodBultoRequest" />
+      <wsdl:output name="tramaImprCodBultoResponse" message="tns:tramaImprCodBultoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="impresionConECBWS">
+      <wsdl:input name="impresionConECBWSRequest" message="tns:impresionConECBWSRequest" />
+      <wsdl:output name="impresionConECBWSResponse" message="tns:impresionConECBWSResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="configImpr">
+      <wsdl:input name="configImprRequest" message="tns:configImprRequest" />
+      <wsdl:output name="configImprResponse" message="tns:configImprResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="impresionWS">
+      <wsdl:input name="impresionWSRequest" message="tns:impresionWSRequest" />
+      <wsdl:output name="impresionWSResponse" message="tns:impresionWSResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="tramaImpr">
+      <wsdl:input name="tramaImprRequest" message="tns:tramaImprRequest" />
+      <wsdl:output name="tramaImprResponse" message="tns:tramaImprResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="impresionPDFConECBWS">
+      <wsdl:input name="impresionPDFConECBWSRequest" message="tns:impresionPDFConECBWSRequest" />
+      <wsdl:output name="impresionPDFConECBWSResponse" message="tns:impresionPDFConECBWSResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="configuracionImpresoraWS">
+      <wsdl:input name="configuracionImpresoraWSRequest" message="tns:configuracionImpresoraWSRequest" />
+      <wsdl:output name="configuracionImpresoraWSResponse" message="tns:configuracionImpresoraWSResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="impresionIntegracionConECBWS">
+      <wsdl:input name="impresionIntegracionConECBWSRequest" message="tns:impresionIntegracionConECBWSRequest" />
+      <wsdl:output name="impresionIntegracionConECBWSResponse" message="tns:impresionIntegracionConECBWSResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="serviciosComplementariosWS">
+      <wsdl:input name="serviciosComplementariosWSRequest" message="tns:serviciosComplementariosWSRequest" />
+      <wsdl:output name="serviciosComplementariosWSResponse" message="tns:serviciosComplementariosWSResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="impresionCodeBarWS">
+      <wsdl:input name="impresionCodeBarWSRequest" message="tns:impresionCodeBarWSRequest" />
+      <wsdl:output name="impresionCodeBarWSResponse" message="tns:impresionCodeBarWSResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="tramasImprEnvio">
+      <wsdl:input name="tramasImprEnvioRequest" message="tns:tramasImprEnvioRequest" />
+      <wsdl:output name="tramasImprEnvioResponse" message="tns:tramasImprEnvioResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="impresionIntegracionPDFConECBWS">
+      <wsdl:input name="impresionIntegracionPDFConECBWSRequest" message="tns:impresionIntegracionPDFConECBWSRequest" />
+      <wsdl:output name="impresionIntegracionPDFConECBWSResponse" message="tns:impresionIntegracionPDFConECBWSResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ImprimirECBWebServiceHttpBinding" type="tns:ImprimirECBWebServicePortType">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="serviciosProductosCI">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="serviciosProductosCIRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="serviciosProductosCIResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLogoImpr">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getLogoImprRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getLogoImprResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impresionPDFWS">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="impresionPDFWSRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="impresionPDFWSResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="marcasModelosImpresorasWS">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="marcasModelosImpresorasWSRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="marcasModelosImpresorasWSResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tramaImprCodBulto">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="tramaImprCodBultoRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="tramaImprCodBultoResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impresionConECBWS">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="impresionConECBWSRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="impresionConECBWSResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="configImpr">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="configImprRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="configImprResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impresionWS">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="impresionWSRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="impresionWSResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tramaImpr">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="tramaImprRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="tramaImprResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impresionPDFConECBWS">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="impresionPDFConECBWSRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="impresionPDFConECBWSResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="configuracionImpresoraWS">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="configuracionImpresoraWSRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="configuracionImpresoraWSResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impresionIntegracionConECBWS">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="impresionIntegracionConECBWSRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="impresionIntegracionConECBWSResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviciosComplementariosWS">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="serviciosComplementariosWSRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="serviciosComplementariosWSResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impresionCodeBarWS">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="impresionCodeBarWSRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="impresionCodeBarWSResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tramasImprEnvio">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="tramasImprEnvioRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="tramasImprEnvioResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impresionIntegracionPDFConECBWS">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="impresionIntegracionPDFConECBWSRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="impresionIntegracionPDFConECBWSResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ImprimirECBWebService">
+    <wsdl:port name="ImprimirECBWebServiceHttpPort" binding="tns:ImprimirECBWebServiceHttpBinding">
+      <wsdlsoap:address location="http://citpre.seur.com/CIT-war/services/ImprimirECBWebService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
