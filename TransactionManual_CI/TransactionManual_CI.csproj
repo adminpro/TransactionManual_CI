@@ -12,6 +12,21 @@
     <AssemblyName>TransactionManual_CI</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -73,19 +88,6 @@
     <Compile Include="BrowseFile.designer.cs">
       <DependentUpon>BrowseFile.cs</DependentUpon>
     </Compile>
-    <Compile Include="DPD\Util\BaseDB.cs" />
-    <Compile Include="DPD\Util\CountryDB.cs" />
-    <Compile Include="DPD\Util\DBClass.cs" />
-    <Compile Include="DPD\Util\DepotsDB.cs" />
-    <Compile Include="DPD\Util\LocationDeDB.cs" />
-    <Compile Include="DPD\Util\LocationEnDB.cs" />
-    <Compile Include="DPD\Util\LocationFrDB.cs" />
-    <Compile Include="DPD\Util\RoutesDB.cs" />
-    <Compile Include="DPD\Util\ServiceDB.cs" />
-    <Compile Include="DPD\Util\ServiceInfoDeDB.cs" />
-    <Compile Include="DPD\Util\ServiceInfoEnDB.cs" />
-    <Compile Include="DPD\Util\ServiceInfoEtDB.cs" />
-    <Compile Include="DPD\Util\ServicesInfoCsDB.cs" />
     <Compile Include="frmDepot.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +176,45 @@
     </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DPD.Util\DPD.Util.csproj">
+      <Project>{91AFCD60-767F-42F8-9B40-8FBB5660805E}</Project>
+      <Name>DPD.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\RDB\" />
     <Folder Include="RDB\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

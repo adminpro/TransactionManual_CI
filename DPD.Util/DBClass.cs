@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TransactionManual_CI.DPD.Util
+namespace DPD.Util
 {
     public class COUNTRY
     {
@@ -32,44 +32,38 @@ namespace TransactionManual_CI.DPD.Util
         public string WEB { get; set; }
     }
 
-    public class LOCATION_DE
+    public class LOCATION
     {
         public string AreaName { get; set; }
         public string CityName { get; set; }
         public string ISO_Alpha2CountryCode { get; set; }
         public string PostCode { get; set; }
     }
-    public class LOCATION_EN
-    {
-
-    }
-    public class LOCATION_FR
-    {
-
-    }
     public class ROUTES
     {
-
+        public string DestinationCountry { get; set; }
+        public string BeginPostCode { get; set; }
+        public string EndPostCode { get; set; }
+        public string ServiceCodes { get; set; }
+        public string RoutingPlaces { get; set; }
+        public string SendingDate { get; set; }
+        public string O_Sort { get; set; }
+        public string D_Depot { get; set; }
+        public string GroupingPriority { get; set; }
+        public string D_Sort { get; set; }
+        public string BarcodeID { get; set; }
     }
     public class SERVICE
     {
-
+        public string ServiceCode { get; set; }
+        public string ServiceText { get; set; }
+        public string ServiceMark { get; set; }
+        public string ServiceElements { get; set; }
     }
 
-    public class SERVICEINFO_CS
+    public class SERVICEINFO
     {
-
-    }
-    public class SERVICEINFO_DE
-    {
-
-    }
-    public class SERVICEINFO_EN
-    {
-
-    }
-    public class SERVICEINFO_ET
-    {
-
+        public string ServiceCode { get; set; }
+        public string ServiceFieldInfo { get; set; }
     }
 }

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TransactionManual_CI.DPD.Util
+namespace DPD.Util
 {
-    public class ServiceInfoDeDB : BaseDB<SERVICEINFO_DE>
+    public class ServiceInfoDeDB : BaseDB<SERVICEINFO>
     {
         public ServiceInfoDeDB()
             : base(@"RDB\SERVICEINFO.DE")

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TransactionManual_CI.DPD.Util
+namespace DPD.Util
 {
-    public class ServiceInfoEtDB:BaseDB<SERVICEINFO_ET>
+    public class ServiceInfoEtDB : BaseDB<SERVICEINFO>
     {
         public ServiceInfoEtDB()
             : base(@"RDB\SERVICEINFO.ET")

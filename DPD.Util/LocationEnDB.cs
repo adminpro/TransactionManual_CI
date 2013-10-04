@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TransactionManual_CI.DPD.Util
+namespace DPD.Util
 {
-    public class LocationEnDB : BaseDB<LOCATION_EN>
+    public class LocationEnDB : BaseDB<LOCATION>
     {
         public LocationEnDB()
             : base(@"RDB\LOCATION.EN")

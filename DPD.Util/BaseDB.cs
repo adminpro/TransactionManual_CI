@@ -3,24 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Reflection;
-using System.Windows.Forms;
 using System.IO;
 
-namespace TransactionManual_CI.DPD.Util
+namespace DPD.Util
 {
     public class BaseDB<T> where T:class
     {
         public List<T> Lists { get; set; }
         public BaseDB(string dbFilePath)
         {
-            this.Lists = (from c in System.IO.File.ReadAllLines(Path.Combine(Application.StartupPath, dbFilePath))
+            this.Lists = (from c in System.IO.File.ReadAllLines(Assembly.GetExecutingAssembly().Location.Replace("DPD.Util.dll", dbFilePath))
                           where !c.StartsWith("#")
                           select GetItem(c)).ToList();
         }
 
-        private T GetItem(string line)
+        protected virtual T GetItem(string line)
         {
-            string[] arr = line.Split(new string[] { "|" }, StringSplitOptions.None);
+            string[] arr = line.Split(new char[] { '|' });
             Type type = typeof(T);
             object o = Activator.CreateInstance(type);
 

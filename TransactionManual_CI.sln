@@ -3,16 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionManual_CI", "TransactionManual_CI\TransactionManual_CI.csproj", "{42DA49E7-0EC8-4414-8FBE-075B7CF1A6BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPD.Util", "DPD.Util\DPD.Util.csproj", "{91AFCD60-767F-42F8-9B40-8FBB5660805E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{42DA49E7-0EC8-4414-8FBE-075B7CF1A6BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{42DA49E7-0EC8-4414-8FBE-075B7CF1A6BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42DA49E7-0EC8-4414-8FBE-075B7CF1A6BA}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{42DA49E7-0EC8-4414-8FBE-075B7CF1A6BA}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{42DA49E7-0EC8-4414-8FBE-075B7CF1A6BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42DA49E7-0EC8-4414-8FBE-075B7CF1A6BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91AFCD60-767F-42F8-9B40-8FBB5660805E}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{91AFCD60-767F-42F8-9B40-8FBB5660805E}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{91AFCD60-767F-42F8-9B40-8FBB5660805E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91AFCD60-767F-42F8-9B40-8FBB5660805E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
