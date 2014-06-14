@@ -40,6 +40,10 @@
             this.btnAramex = new System.Windows.Forms.Button();
             this.btnDHL = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnXmlWriter = new System.Windows.Forms.Button();
+            this.btnReduce = new System.Windows.Forms.Button();
+            this.btnMatchStringLine = new System.Windows.Forms.Button();
+            this.txtStringLine = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -154,11 +158,52 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnXmlWriter
+            // 
+            this.btnXmlWriter.Location = new System.Drawing.Point(572, 160);
+            this.btnXmlWriter.Name = "btnXmlWriter";
+            this.btnXmlWriter.Size = new System.Drawing.Size(75, 23);
+            this.btnXmlWriter.TabIndex = 12;
+            this.btnXmlWriter.Text = "XmlWriter";
+            this.btnXmlWriter.UseVisualStyleBackColor = true;
+            this.btnXmlWriter.Click += new System.EventHandler(this.btnXmlWriter_Click);
+            // 
+            // btnReduce
+            // 
+            this.btnReduce.Location = new System.Drawing.Point(572, 189);
+            this.btnReduce.Name = "btnReduce";
+            this.btnReduce.Size = new System.Drawing.Size(75, 23);
+            this.btnReduce.TabIndex = 13;
+            this.btnReduce.Text = "Reduce";
+            this.btnReduce.UseVisualStyleBackColor = true;
+            this.btnReduce.Click += new System.EventHandler(this.btnReduce_Click);
+            // 
+            // btnMatchStringLine
+            // 
+            this.btnMatchStringLine.Location = new System.Drawing.Point(572, 218);
+            this.btnMatchStringLine.Name = "btnMatchStringLine";
+            this.btnMatchStringLine.Size = new System.Drawing.Size(75, 23);
+            this.btnMatchStringLine.TabIndex = 14;
+            this.btnMatchStringLine.Text = "String line";
+            this.btnMatchStringLine.UseVisualStyleBackColor = true;
+            this.btnMatchStringLine.Click += new System.EventHandler(this.btnMatchStringLine_Click);
+            // 
+            // txtStringLine
+            // 
+            this.txtStringLine.Location = new System.Drawing.Point(370, 220);
+            this.txtStringLine.Name = "txtStringLine";
+            this.txtStringLine.Size = new System.Drawing.Size(196, 20);
+            this.txtStringLine.TabIndex = 15;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(659, 315);
+            this.Controls.Add(this.txtStringLine);
+            this.Controls.Add(this.btnMatchStringLine);
+            this.Controls.Add(this.btnReduce);
+            this.Controls.Add(this.btnXmlWriter);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnDHL);
             this.Controls.Add(this.btnAramex);
@@ -192,6 +237,10 @@
         private System.Windows.Forms.Button btnAramex;
         private System.Windows.Forms.Button btnDHL;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnXmlWriter;
+        private System.Windows.Forms.Button btnReduce;
+        private System.Windows.Forms.Button btnMatchStringLine;
+        private System.Windows.Forms.TextBox txtStringLine;
     }
 }
 

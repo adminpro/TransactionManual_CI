@@ -5,12 +5,12 @@ using System.Text;
 
 namespace DPD.Util
 {
-    public class ServiceDB : BaseDB<SERVICE>
+    public class DenyDB:BaseDB<DENY>
     {
-        public ServiceDB()
-            : base(@"RDB\SERVICE")
+        public DenyDB()
+            : base(@"RDB\DENY")
         {
-            
+
         }
     }
 }

@@ -5,9 +5,9 @@ using System.Text;
 
 namespace DPD.Util
 {
-    public class ServicesInfoCsDB : BaseDB<SERVICEINFO>
+    public class ServiceInfoCsDB : BaseDB<SERVICEINFO>
     {
-        public ServicesInfoCsDB()
+        public ServiceInfoCsDB()
             : base(@"RDB\SERVICEINFO.CS")
         {
 

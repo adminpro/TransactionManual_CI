@@ -88,17 +88,43 @@
     <Compile Include="BrowseFile.designer.cs">
       <DependentUpon>BrowseFile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Common\ConstantsFunction.cs" />
+    <Compile Include="Common\ImageTo1BPP.cs" />
+    <Compile Include="frmAutoMergeConstants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAutoMergeConstants.Designer.cs">
+      <DependentUpon>frmAutoMergeConstants.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDepot.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDepot.Designer.cs">
       <DependentUpon>frmDepot.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListConstants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListConstants.Designer.cs">
+      <DependentUpon>frmListConstants.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRijndaelManaged.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRijndaelManaged.Designer.cs">
+      <DependentUpon>frmRijndaelManaged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelektVracht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelektVracht.Designer.cs">
+      <DependentUpon>frmSelektVracht.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTestServicesZara.cs">
       <SubType>Form</SubType>
@@ -111,11 +137,23 @@
     <EmbeddedResource Include="BrowseFile.resx">
       <DependentUpon>BrowseFile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAutoMergeConstants.resx">
+      <DependentUpon>frmAutoMergeConstants.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDepot.resx">
       <DependentUpon>frmDepot.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmListConstants.resx">
+      <DependentUpon>frmListConstants.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRijndaelManaged.resx">
+      <DependentUpon>frmRijndaelManaged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelektVracht.resx">
+      <DependentUpon>frmSelektVracht.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTestServicesZara.resx">
       <DependentUpon>frmTestServicesZara.cs</DependentUpon>
@@ -154,6 +192,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="XLabel.cs">
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -212,6 +253,20 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="INT_ 201310081555.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Selekt_Vracht\Data\ABC6789.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Selekt_Vracht\Data\ABCD960718001.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\Constants_Template.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\RDB\" />

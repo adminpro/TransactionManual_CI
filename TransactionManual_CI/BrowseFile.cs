@@ -13,6 +13,18 @@ namespace CodeGenerator
     {
         public string Filter { get; set; }
 
+        public string LabelText
+        {
+            get
+            {
+                return lblChooseFile.Text;
+            }
+            set
+            {
+                lblChooseFile.Text = value;
+            }
+        }
+
         public event OnChoosedEventHandle ChoosedFile;
         public delegate void OnChoosedEventHandle(object sender, OnChoosedFileEventArg e);
         //public delegate void UserControlResult(string fileName, DialogResult result);
@@ -21,11 +33,17 @@ namespace CodeGenerator
         {
             InitializeComponent();
         }
-
+        public string FilePath
+        {
+            get
+            {
+                return txtFilePath.Text;
+            }
+        }
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             OpenFileDialog openDlg = new OpenFileDialog();
-            if(!string.IsNullOrEmpty(this.Filter))
+            if (!string.IsNullOrEmpty(this.Filter))
                 openDlg.Filter = string.Format("{0} file ({1})|*{1}", this.Filter.ToUpper(), this.Filter);
             var dlgResult = openDlg.ShowDialog();
             if (dlgResult == DialogResult.OK)

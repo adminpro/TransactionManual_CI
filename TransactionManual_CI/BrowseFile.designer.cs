@@ -35,6 +35,7 @@
             // 
             // lblChooseFile
             // 
+            this.lblChooseFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblChooseFile.AutoSize = true;
             this.lblChooseFile.Location = new System.Drawing.Point(3, 8);
             this.lblChooseFile.Name = "lblChooseFile";
@@ -44,6 +45,7 @@
             // 
             // txtFilePath
             // 
+            this.txtFilePath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFilePath.Location = new System.Drawing.Point(71, 5);
             this.txtFilePath.Name = "txtFilePath";
             this.txtFilePath.Size = new System.Drawing.Size(299, 20);
@@ -51,6 +53,7 @@
             // 
             // btnBrowse
             // 
+            this.btnBrowse.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnBrowse.Location = new System.Drawing.Point(376, 3);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(25, 23);
@@ -76,7 +79,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblChooseFile;
-        private System.Windows.Forms.TextBox txtFilePath;
         private System.Windows.Forms.Button btnBrowse;
+        private System.Windows.Forms.TextBox txtFilePath;
     }
 }

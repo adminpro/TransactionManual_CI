@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace TransactionManual_CI
+namespace BindingForm
 {
     static class Program
     {
@@ -15,11 +15,7 @@ namespace TransactionManual_CI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new frmMain());
-            //Application.Run(new frmDepot());
-            //Application.Run(new frmSelektVracht());
-            //Application.Run(new frmAutoMergeConstants());
-            Application.Run(new frmRijndaelManaged());
+            Application.Run(new Form1());
         }
     }
 }

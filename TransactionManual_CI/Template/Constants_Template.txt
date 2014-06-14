@@ -1,0 +1,14 @@
+﻿using System;
+using System.Text;
+
+namespace {Namesapce}
+{
+    /// <summary>
+    /// Class {ClassName}
+    /// Store all common constant value
+    /// </summary>
+    public class {ClassName}
+	{
+{ListConstants}
+	}
+}

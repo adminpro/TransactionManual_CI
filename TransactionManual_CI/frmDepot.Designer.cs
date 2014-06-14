@@ -37,9 +37,11 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageToBase64ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.base64ToImageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageToBinaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.base64ToImageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageToHexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.imageTo1bppToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.convertTo1bppToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -58,7 +60,10 @@
             "SERVICEINFO_CS",
             "SERVICEINFO_DE",
             "SERVICEINFO_EN",
-            "SERVICEINFO_ET"});
+            "SERVICEINFO_ET",
+            "ALLOW",
+            "DENY",
+            "CUSTOMS"});
             this.cboRDB.Location = new System.Drawing.Point(85, 31);
             this.cboRDB.Name = "cboRDB";
             this.cboRDB.Size = new System.Drawing.Size(206, 21);
@@ -93,6 +98,7 @@
             this.lblTotal.Size = new System.Drawing.Size(40, 13);
             this.lblTotal.TabIndex = 3;
             this.lblTotal.Text = "Total:0";
+            this.lblTotal.Click += new System.EventHandler(this.lblTotal_Click);
             // 
             // menuStrip1
             // 
@@ -116,7 +122,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // toolsToolStripMenuItem
@@ -125,7 +131,9 @@
             this.imageToBase64ToolStripMenuItem,
             this.imageToBinaryToolStripMenuItem,
             this.base64ToImageToolStripMenuItem,
-            this.imageToHexToolStripMenuItem});
+            this.imageToHexToolStripMenuItem,
+            this.imageTo1bppToolStripMenuItem,
+            this.convertTo1bppToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.toolsToolStripMenuItem.Text = "Tools";
@@ -137,13 +145,6 @@
             this.imageToBase64ToolStripMenuItem.Text = "Image to base64";
             this.imageToBase64ToolStripMenuItem.Click += new System.EventHandler(this.imageToBase64ToolStripMenuItem_Click);
             // 
-            // base64ToImageToolStripMenuItem
-            // 
-            this.base64ToImageToolStripMenuItem.Name = "base64ToImageToolStripMenuItem";
-            this.base64ToImageToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.base64ToImageToolStripMenuItem.Text = "Base64 to image";
-            this.base64ToImageToolStripMenuItem.Click += new System.EventHandler(this.base64ToImageToolStripMenuItem_Click);
-            // 
             // imageToBinaryToolStripMenuItem
             // 
             this.imageToBinaryToolStripMenuItem.Name = "imageToBinaryToolStripMenuItem";
@@ -151,12 +152,33 @@
             this.imageToBinaryToolStripMenuItem.Text = "Image to binary";
             this.imageToBinaryToolStripMenuItem.Click += new System.EventHandler(this.imageToBinaryToolStripMenuItem_Click);
             // 
+            // base64ToImageToolStripMenuItem
+            // 
+            this.base64ToImageToolStripMenuItem.Name = "base64ToImageToolStripMenuItem";
+            this.base64ToImageToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.base64ToImageToolStripMenuItem.Text = "Base64 to image";
+            this.base64ToImageToolStripMenuItem.Click += new System.EventHandler(this.base64ToImageToolStripMenuItem_Click);
+            // 
             // imageToHexToolStripMenuItem
             // 
             this.imageToHexToolStripMenuItem.Name = "imageToHexToolStripMenuItem";
             this.imageToHexToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.imageToHexToolStripMenuItem.Text = "Image to hex";
             this.imageToHexToolStripMenuItem.Click += new System.EventHandler(this.imageToHexToolStripMenuItem_Click);
+            // 
+            // imageTo1bppToolStripMenuItem
+            // 
+            this.imageTo1bppToolStripMenuItem.Name = "imageTo1bppToolStripMenuItem";
+            this.imageTo1bppToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.imageTo1bppToolStripMenuItem.Text = "Image to 1bpp";
+            this.imageTo1bppToolStripMenuItem.Click += new System.EventHandler(this.imageTo1bppToolStripMenuItem_Click);
+            // 
+            // convertTo1bppToolStripMenuItem
+            // 
+            this.convertTo1bppToolStripMenuItem.Name = "convertTo1bppToolStripMenuItem";
+            this.convertTo1bppToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.convertTo1bppToolStripMenuItem.Text = "Convert to 1bpp";
+            this.convertTo1bppToolStripMenuItem.Click += new System.EventHandler(this.convertTo1bppToolStripMenuItem_Click);
             // 
             // frmDepot
             // 
@@ -193,6 +215,8 @@
         private System.Windows.Forms.ToolStripMenuItem base64ToImageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem imageToBinaryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem imageToHexToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem imageTo1bppToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem convertTo1bppToolStripMenuItem;
 
     }
 }

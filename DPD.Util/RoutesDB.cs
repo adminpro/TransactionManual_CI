@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Reflection;
+using System.IO;
 
 namespace DPD.Util
 {
@@ -12,6 +14,65 @@ namespace DPD.Util
         {
 
         }
+
+        private bool CompareTwoChar(char one, char two, char three, char four)
+        {
+            return one == two && three == four;
+        }
+        private bool CompareCountryCode(string a, string b)
+        {
+            return a == b;
+        }
+        public RoutesDB(string countryCode)
+            : base()
+        {
+            System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+            sw.Start();
+            this.Lists = new List<ROUTES>();
+            string tmpLine = string.Empty;
+            bool matchFind = false;
+
+            using (StreamReader reader = new StreamReader(Assembly.GetExecutingAssembly().Location.Replace("DPD.Util.dll", @"RDB\ROUTES")))
+            {
+                for (int i = 0; i < 7; i++)
+                {
+                    reader.ReadLine();
+                }
+                while (!reader.EndOfStream)
+                {
+                    tmpLine = reader.ReadLine();
+                    if (matchFind)
+                    {
+                        //if (CompareTwoChar(tmpLine[0], countryCode[0], tmpLine[1], countryCode[1]))
+                        //if(CompareCountryCode(tmpLine.Substring(0,2), countryCode))
+                        //if (tmpLine.IndexOf(countryCode)==0)
+                        if(tmpLine[0]==countryCode[0] && tmpLine[1]==countryCode[1])
+                            //GetItem(tmpLine);
+                            this.Lists.Add(GetItem(tmpLine));
+                        else
+                            break;
+
+                    }
+                    else
+                    {
+                        //if (CompareTwoChar(tmpLine[0], countryCode[0], tmpLine[1], countryCode[1]))
+                        //if (CompareCountryCode(tmpLine.Substring(0, 2), countryCode))
+                        //if (tmpLine.IndexOf(countryCode) == 0)
+                        if (tmpLine[0] == countryCode[0] && tmpLine[1] == countryCode[1])
+                        {
+                            matchFind = true;
+                            //GetItem(tmpLine);
+                            this.Lists.Add(GetItem(tmpLine));
+                        }
+                        //else
+                        //    continue;
+                    }
+                }
+            }
+            sw.Stop();
+            System.Diagnostics.Trace.WriteLine(sw.ElapsedMilliseconds);
+        }
+
         /// <summary>
         /// Gets the item.
         /// Apply for get large data.
@@ -20,7 +81,7 @@ namespace DPD.Util
         /// <returns></returns>
         protected override ROUTES GetItem(string line)
         {
-            string[] arr = line.Split(new char[] { '|' });
+            string[] arr = line.Split(CharSpliter);
             return new ROUTES
             {
                 DestinationCountry = arr[0],

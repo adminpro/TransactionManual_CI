@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ThermalLabel Version="5.0" Width="10.2" Height="4.5" GapLength="0" MarkLength="0" OffsetLength="0" UnitType="Cm" LabelsPerRow="1" LabelsHorizontalGapLength="0" IsContinuous="False">
+  <Items>
+    <LineShapeItem Name="" Y="1.4667" DataField="" DataFieldFormatString="" CacheItemId="" Comments="" Tag="" Width="10.2" Height="0.0254" StrokeThickness="0.0254" />
+    <LineShapeItem Name="" Y="2.2667" DataField="" DataFieldFormatString="" CacheItemId="" Comments="" Tag="" Width="10.2" Height="0.0254" StrokeThickness="0.0254" />
+    <LineShapeItem Name="" Y="2.9667" DataField="" DataFieldFormatString="" CacheItemId="" Comments="" Tag="" Width="10.2" Height="0.0254" StrokeThickness="0.0254" />
+    <TextItem Name="txtCourierService" Y="0.2754" DataField="" DataFieldFormatString="" CacheItemId="" Comments="" Tag="" Width="7.5" Height="0.8996" Text="{txtCourierService}" Font="Arial,24,Point,,,False,90" />
+    <TextItem Name="txtCountryCode" X="8.8529" Y="-0.0333" DataField="" DataFieldFormatString="" CacheItemId="" Comments="" Tag="" Width="1.3471" Height="0.8996" Text="{txtCountryCode}" Font="Arial,24,Point,,,False,90" RightToLeft="True" />
+    <TextItem Name="txtDate" X="8.2" Y="0.9634" DataField="" DataFieldFormatString="" CacheItemId="" Comments="" Tag="" Width="2" Height="0.4233" Text="{Date}" Font="Arial,8,Point,,,False,90" RightToLeft="True" />
+    <TextItem Name="txtDeliveryName" Y="1.5719" DataField="" DataFieldFormatString="" CacheItemId="" Comments="" Tag="" Width="10.2" Height="0.6085" Text="{txtDeliveryName}" Font="Arial,12,Point,,,False,90" />
+    <TextItem Name="txtOrderNumber" Y="2.2667" DataField="" DataFieldFormatString="" CacheItemId="" Comments="" Tag="" Width="7.3316" Height="0.7" Text="{txtOrderNumber}" BackColor="Black" Font="Arial,18,Point,,,False,90" ForeColor="White" />
+    <TextItem Name="txtBox" X="7.4835" Y="2.2667" DataField="" DataFieldFormatString="" CacheItemId="" Comments="" Tag="" Width="2.7165" Height="0.7" Text="{txtBox}" BackColor="Black" Font="Arial,18,Point,,,False,90" ForeColor="White" RightToLeft="True" TextAlignment="Center" />
+    <BarcodeItem Name="txtZaraBarcode" Y="3.0402" DataField="" DataFieldFormatString="" CacheItemId="" Comments="" Tag="" Width="10.2" Height="1.3759" Symbology="Code39" Code="{txtBarcode}" AddChecksum="False" AztecCodeModuleSize="0.105918" BarcodeAlignment="MiddleCenter" BarHeight="1" BarWidth="0.026416" BearerBarThickness="0.127" DataMatrixModuleSize="0.105918" DisplayStartStopChar="False" EanUpcGuardBarHeight="1.397" EanUpcSupplementSeparation="0.381" EanUpcSupplementTopMargin="0.381" Font="Arial,8,Point,,,False,90" PharmacodeBarsSpacing="0.105918" PharmacodeThickBarWidth="0.15875" PharmacodeThinBarWidth="0.052832" Postal4StateBarsSpacing="0.079502" Postal4StateTrackerBarHeight="0.2032" Postal4StateTrackerBarWidth="0.052832" QRCodeModuleSize="0.105918" QuietZone="0.254,0,0.254,0.050800000000000005" TextFont="NativePrinterFontA,10,Point,,,False,90" />
+  </Items>
+</ThermalLabel>

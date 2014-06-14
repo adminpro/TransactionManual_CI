@@ -11,6 +11,8 @@ using DPD.Util;
 using System.Diagnostics;
 using System.IO;
 using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
+using TransactionManual_CI.Common;
 
 namespace TransactionManual_CI
 {
@@ -20,7 +22,22 @@ namespace TransactionManual_CI
 
         public frmDepot()
         {
+
+            DateTime dt = DateTime.Parse("2005/06/14");
+            
+            //string a = "15191";
+            //string b = "15619";
+            //string c = "15618";
+
+            //var output1 = string.Compare(c, a);
+            //output1 = string.Compare(c, b);
+
+            CheckDigitCalculation checkDig = new CheckDigitCalculation();
+            var output = checkDig.Get_Iso7064_Mod37_36("007110601632532948375179276".ToCharArray()); //ABC987
+
             InitializeComponent();
+
+            //var testGetString = AppResource.ResourceManager.GetString("Zara_Template");
         }
 
         //private void brfChooseRDB_ChoosedFile(object sender, CodeGenerator.OnChoosedFileEventArg e)
@@ -84,18 +101,18 @@ namespace TransactionManual_CI
                 case "ROUTES":
                     if (this.Lists == null)
                     {
-                        RoutesDB routesDB = new RoutesDB();
+                        RoutesDB routesDB = new RoutesDB(); //ZW "FR"
                         this.Lists = routesDB.Lists;
                     }
                     dgvData.DataSource = this.Lists;
                     break;
                 case "SERVICE":
-                    ServiceDB ServiceDB = new ServiceDB();
-                    dgvData.DataSource = ServiceDB.Lists;
+                    ServiceDB serviceDB = new ServiceDB();
+                    dgvData.DataSource = serviceDB.Lists;
                     break;
                 case "SERVICEINFO_CS":
-                    ServicesInfoCsDB servicesInfoCsDB = new ServicesInfoCsDB();
-                    dgvData.DataSource = servicesInfoCsDB.Lists;
+                    ServiceInfoCsDB serviceInfoCsDB = new ServiceInfoCsDB();
+                    dgvData.DataSource = serviceInfoCsDB.Lists;
                     break;
                 case "SERVICEINFO_DE":
                     ServiceInfoDeDB serviceInfoDeDB = new ServiceInfoDeDB();
@@ -108,6 +125,18 @@ namespace TransactionManual_CI
                 case "SERVICEINFO_ET":
                     ServiceInfoEtDB serviceInfoEtDB = new ServiceInfoEtDB();
                     dgvData.DataSource = serviceInfoEtDB.Lists;
+                    break;
+                case "ALLOW":
+                    AllowDB allowDB = new AllowDB();
+                    dgvData.DataSource = allowDB.Lists;
+                    break;
+                case "DENY":
+                    DenyDB denyDB = new DenyDB();
+                    dgvData.DataSource = denyDB.Lists;
+                    break;
+                case "CUSTOMS":
+                    CustomsDB customsDB = new CustomsDB();
+                    dgvData.DataSource = customsDB.Lists;
                     break;
             }
             stopWatch.Stop();
@@ -303,6 +332,113 @@ namespace TransactionManual_CI
                 hex.AppendFormat("{0:x2}", b);
             }
             return hex.ToString();
+        }
+
+        private void lblTotal_Click(object sender, EventArgs e)
+        {
+
+        }
+        private PictureBox pictureBox1 = new PictureBox();
+        private PictureBox pictureBox2 = new PictureBox();
+        private Bitmap bm;
+        private void imageTo1bppToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Load a file
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "Image files|*.bmp;*.gif;*.jpg;*.png";
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                Bitmap img = (Bitmap)Image.FromFile(dlg.FileName);
+                //Ensure that it's a 32 bit per pixel file
+                if (img.PixelFormat != PixelFormat.Format32bppPArgb)
+                {
+                    Bitmap temp = new Bitmap(img.Width, img.Height, PixelFormat.Format32bppPArgb);
+                    Graphics g = Graphics.FromImage(temp);
+                    g.DrawImage(img, new Rectangle(0, 0, img.Width, img.Height), 0, 0, img.Width, img.Height, GraphicsUnit.Pixel);
+                    img.Dispose();
+                    g.Dispose();
+                    img = temp;
+                }
+                this.pictureBox1.Image = img;
+                //lock the bits of the original bitmap
+                BitmapData bmdo = img.LockBits(new Rectangle(0, 0, img.Width, img.Height), ImageLockMode.ReadOnly, img.PixelFormat);
+
+                //and the new 1bpp bitmap
+                bm = new Bitmap(this.pictureBox1.Image.Width, this.pictureBox1.Image.Height, PixelFormat.Format1bppIndexed);
+                BitmapData bmdn = bm.LockBits(new Rectangle(0, 0, bm.Width, bm.Height), ImageLockMode.ReadWrite, PixelFormat.Format1bppIndexed);
+
+                //for diagnostics
+                DateTime dt = DateTime.Now;
+
+                //scan through the pixels Y by X
+                int x, y;
+                for (y = 0; y < img.Height; y++)
+                {
+                    for (x = 0; x < img.Width; x++)
+                    {
+                        //generate the address of the colour pixel
+                        int index = y * bmdo.Stride + (x * 4);
+                        //check its brightness
+                        if (Color.FromArgb(Marshal.ReadByte(bmdo.Scan0, index + 2),
+                                        Marshal.ReadByte(bmdo.Scan0, index + 1),
+                                        Marshal.ReadByte(bmdo.Scan0, index)).GetBrightness() > 0.5f)
+                            this.SetIndexedPixel(x, y, bmdn, true); //set it if its bright.
+                    }
+                }
+
+                //tidy up
+                bm.UnlockBits(bmdn);
+                img.UnlockBits(bmdo);
+
+                //show the time taken to do the conversion
+                TimeSpan ts = dt - DateTime.Now;
+                System.Diagnostics.Trace.WriteLine("Conversion time was:" + ts.ToString());
+
+                //display the 1bpp image.
+                this.pictureBox2.Image = bm;
+
+                bm.Save("C:\\test_selektvarcht.jpg", ImageFormat.Jpeg);
+
+            }
+        }
+        protected void SetIndexedPixel(int x, int y, BitmapData bmd, bool pixel)
+        {
+            int index = y * bmd.Stride + (x >> 3);
+            byte p = Marshal.ReadByte(bmd.Scan0, index);
+            byte mask = (byte)(0x80 >> (x & 0x7));
+            if (pixel)
+                p |= mask;
+            else
+                p &= (byte)(mask ^ 0xff);
+            Marshal.WriteByte(bmd.Scan0, index, p);
+        }
+
+        private void convertTo1bppToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "Image files|*.bmp;*.gif;*.jpg;*.png";
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                System.Drawing.Bitmap b = new System.Drawing.Bitmap(dlg.FileName);
+                ImageTo1BPP.SplashImage(b, 0, 0);
+                //
+                DateTime dtFaq = DateTime.Now;
+                System.Drawing.Bitmap b0 = ImageTo1BPP.CopyToBpp(b, 1);
+                b0.Save("C:\\test_1bpp_colisimo.jpg", ImageFormat.Jpeg);
+
+                TimeSpan tsFaq = DateTime.Now - dtFaq;
+                Console.WriteLine("GDI conversion time: " + tsFaq.ToString());
+                ImageTo1BPP.SplashImage(b0, 200, 100);
+                //
+                DateTime dtLu = DateTime.Now;
+                System.Drawing.Bitmap b1 = ImageTo1BPP.FaqCopyTo1bpp(b);
+                TimeSpan tsLu = DateTime.Now - dtLu;
+                Console.WriteLine("FAQ conversion time: " + tsLu.ToString());
+                ImageTo1BPP.SplashImage(b1, 400, 200);
+                //
+                System.Threading.Thread.Sleep(1000);
+                ImageTo1BPP.InvalidateRect(IntPtr.Zero, IntPtr.Zero, 1);
+            }
         }
     }
 }

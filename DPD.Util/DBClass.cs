@@ -66,4 +66,54 @@ namespace DPD.Util
         public string ServiceCode { get; set; }
         public string ServiceFieldInfo { get; set; }
     }
+    public class ALLOW
+    {
+        public string RuleFrom { get; set; }
+        public string RuleService { get; set; }
+        public string RuleTo { get; set; }
+        public string UniqueAllowID { get; set; }
+    }
+
+    public class DENY
+    {
+        public string UniqueAllowID { get; set; }
+        public string RuleFrom { get; set; }
+        public string RuleService { get; set; }
+        public string RuleTo { get; set; }
+    }
+    public class CUSTOMS
+    {
+        public string RuleFrom { get; set; }
+        public string CustomsRouting { get; set; }
+        public string RuleService { get; set; }
+        public string RuleTo { get; set; }
+        public string ISO_Alpha2CountryCode { get; set; }
+        public string PostCode { get; set; }
+    }
+    /// <summary>
+    /// Barcode_DataExchange5.4EN.pdf
+    /// Page 19 Description detail
+    /// </summary>
+    public class SelektVracht
+    {
+        public SelektVracht()
+        {
+            if (this.ListParcel == null)
+                this.ListParcel = new List<SelektVrachtItem>();
+        }
+        public string ConsignorId { get; set; } //A030
+        public List<SelektVrachtItem> ListParcel { get; set; }
+    }
+    public class SelektVrachtItem
+    {
+        public string ConsignorNumber { get; set; } //V800
+        public string DateCreated { get; set; } //V012
+        public string ParcelNumber { get; set; } //V020
+        public string CashOnDelivery { get; set; } //V070
+        public string CustomerReference { get; set; } //V160
+        public string HouseNumber { get; set; } //V180
+        public string DeliveryAddress { get; set; } //V181
+        public string PostCode { get; set; } //V190
+        public string TypeOfOrder { get; set; } //V011: 1: Delivery order, 0: Collection order
+    }
 }

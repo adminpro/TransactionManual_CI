@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TrackingInfo>
+  <HAWBUpdate>
+    <OrderId>534133763</OrderId>
+    <TrackingNumber>00006675212810281726</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-07T09:48:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>534077907</OrderId>
+    <TrackingNumber>00006675212809837149</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-07T10:23:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>534133809</OrderId>
+    <TrackingNumber>00006675212810281979</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-07T09:22:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>534022552</OrderId>
+    <TrackingNumber>00006675212809024358</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-07T08:24:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533947435</OrderId>
+    <TrackingNumber>00006675212807996787</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T07:54:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533838629-030519293</OrderId>
+    <TrackingNumber>00006675212808020900</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-03T16:52:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533947493</OrderId>
+    <TrackingNumber>00006675212807961839</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T07:59:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533908977</OrderId>
+    <TrackingNumber>00006675212807679307</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T11:09:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533914992</OrderId>
+    <TrackingNumber>00006675212807733016</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-03T17:27:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533846108</OrderId>
+    <TrackingNumber>00006675212807117670</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T14:29:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533908161</OrderId>
+    <TrackingNumber>00006675212807660879</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T11:09:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533909851</OrderId>
+    <TrackingNumber>00006675212807679819</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T11:05:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533969670</OrderId>
+    <TrackingNumber>00006675212808371538</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T11:55:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533921615</OrderId>
+    <TrackingNumber>00006675212807641960</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-03T17:18:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533860336</OrderId>
+    <TrackingNumber>00006675212807137593</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T11:23:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533856850</OrderId>
+    <TrackingNumber>00006675212807198389</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T12:26:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533906457</OrderId>
+    <TrackingNumber>00006675212807615220</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T11:50:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533970069</OrderId>
+    <TrackingNumber>00006675212808373983</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T08:25:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533964467</OrderId>
+    <TrackingNumber>00006675212808213135</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T09:30:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533906881</OrderId>
+    <TrackingNumber>00006675212807618078</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T11:43:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533909988</OrderId>
+    <TrackingNumber>00006675212807681232</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T11:58:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533780845</OrderId>
+    <TrackingNumber>00006675212806475382</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-03T16:36:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533925978</OrderId>
+    <TrackingNumber>00006675212807799883</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T07:40:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533910196</OrderId>
+    <TrackingNumber>00006675212807703156</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T12:44:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533908046</OrderId>
+    <TrackingNumber>00006675212807660480</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T15:20:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533908517</OrderId>
+    <TrackingNumber>00006675212807661814</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T14:43:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533908588</OrderId>
+    <TrackingNumber>00006675212807662026</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T08:09:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533907922</OrderId>
+    <TrackingNumber>00006675212807660046</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T13:00:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533910675</OrderId>
+    <TrackingNumber>00006675212807703781</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T12:08:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533907326</OrderId>
+    <TrackingNumber>00006675212807681966</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T07:56:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533909042</OrderId>
+    <TrackingNumber>00006675212807679437</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T08:08:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533907790</OrderId>
+    <TrackingNumber>00006675212807624574</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T12:12:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>534016053</OrderId>
+    <TrackingNumber>00006675212808883628</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-03T15:50:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533977963</OrderId>
+    <TrackingNumber>00006675212808569508</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-03T18:32:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533856651</OrderId>
+    <TrackingNumber>00006675212807106247</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T14:28:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533835080</OrderId>
+    <TrackingNumber>00006675212807198167</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-03T16:58:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533846387</OrderId>
+    <TrackingNumber>00006675212807048783</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T14:04:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533948283</OrderId>
+    <TrackingNumber>00006675212807955135</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T14:12:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533909096</OrderId>
+    <TrackingNumber>00006675212807679543</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-03T15:05:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533846801</OrderId>
+    <TrackingNumber>00006675212807679956</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T14:45:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533969872</OrderId>
+    <TrackingNumber>00006675212808372818</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T15:23:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533517773</OrderId>
+    <TrackingNumber>00006675212807712974</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T13:21:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533913052</OrderId>
+    <TrackingNumber>00006675212807711472</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-03T16:16:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533910991</OrderId>
+    <TrackingNumber>00006675212807681607</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T15:14:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533907435</OrderId>
+    <TrackingNumber>00006675212807621900</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-03T16:10:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533912799</OrderId>
+    <TrackingNumber>00006675212807709707</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-03T16:51:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+  <HAWBUpdate>
+    <OrderId>533858491</OrderId>
+    <TrackingNumber>00006675212807127181</TrackingNumber>
+    <StatusFlag>SHDL</StatusFlag>
+    <StatusDetailMsg>SHIPMENT DELIVERED</StatusDetailMsg>
+    <Location></Location>
+    <DateTime>2013-10-04T14:14:00</DateTime>
+    <Shipper>00007</Shipper>
+    <ShipperDesc>DHL Express</ShipperDesc>
+  </HAWBUpdate>
+</TrackingInfo>

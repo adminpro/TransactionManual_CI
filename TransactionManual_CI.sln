@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionManual_CI", "Tra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPD.Util", "DPD.Util\DPD.Util.csproj", "{91AFCD60-767F-42F8-9B40-8FBB5660805E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestDPD", "TestDPD", "{DF3BC07B-4E41-472A-A58D-18BD90E6FFE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingForm", "BindingForm\BindingForm.csproj", "{33B0520A-2505-4483-AE15-E8942BE59414}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,8 +23,17 @@ Global
 		{91AFCD60-767F-42F8-9B40-8FBB5660805E}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{91AFCD60-767F-42F8-9B40-8FBB5660805E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91AFCD60-767F-42F8-9B40-8FBB5660805E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33B0520A-2505-4483-AE15-E8942BE59414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33B0520A-2505-4483-AE15-E8942BE59414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33B0520A-2505-4483-AE15-E8942BE59414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B0520A-2505-4483-AE15-E8942BE59414}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{91AFCD60-767F-42F8-9B40-8FBB5660805E} = {DF3BC07B-4E41-472A-A58D-18BD90E6FFE0}
+		{42DA49E7-0EC8-4414-8FBE-075B7CF1A6BA} = {DF3BC07B-4E41-472A-A58D-18BD90E6FFE0}
+		{33B0520A-2505-4483-AE15-E8942BE59414} = {DF3BC07B-4E41-472A-A58D-18BD90E6FFE0}
 	EndGlobalSection
 EndGlobal

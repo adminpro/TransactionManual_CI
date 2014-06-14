@@ -5,12 +5,12 @@ using System.Text;
 
 namespace DPD.Util
 {
-    public class ServiceDB : BaseDB<SERVICE>
+    public class AllowDB:BaseDB<ALLOW>
     {
-        public ServiceDB()
-            : base(@"RDB\SERVICE")
+        public AllowDB()
+            : base(@"RDB\ALLOW")
         {
-            
+
         }
     }
 }
